@@ -1,0 +1,19 @@
+<div class="card-container">
+<form class="form" #registerForm="ngForm" style="width: 50%;">
+  <div class="form-group mb-3">
+    <label for="name">Name *</label>
+    <input type="name" class="form-control" id="name" [(ngModel)]="formData.name" name="name" placeholder="Enter name" style="width:100%" #name="ngModel" />
+  </div>
+    <div class="form-group mb-3">
+      <label for="email">Email address *</label>
+      <input type="email" class="form-control" id="email" [(ngModel)]="formData.email" name="email" placeholder="Enter email" style="width:100%" #email="ngModel" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="role">Select Role *</label>
+        <select class="form-control"  id="role" [(ngModel)]="formData.role" name="role" style="appearance: auto;">
+            <option *ngFor="let role1 of roles" [value]="role1">{{role1}}</option>
+        </select>
+    </div>
+    <button id="registerBtn" class="btn btn-primary vms-btn-primary btn-small" (click)="register()" [disabled]="registerForm.invalid"> Register </button>
+  </form>
+</div>

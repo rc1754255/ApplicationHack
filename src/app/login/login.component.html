@@ -1,0 +1,12 @@
+<div class="card-container">
+<form class="form" #loginForm="ngForm" style="width: 50%;">
+    <div class="form-group mb-3">
+      <label for="email">Email address *</label>
+      <input type="email" class="form-control" id="email" [(ngModel)]="formData.email" name="email" placeholder="Enter email" style="width:100%" #email="ngModel" />
+    </div>
+    <button id="loginBtn" class="btn btn-primary vms-btn-primary btn-small mb-3" (click)="login()" [disabled]="loginForm.invalid"> Login </button>
+
+    <span style="display: block;">For New Registration: <button id="registrationBtn" class="btn btn-primary vms-btn-primary btn-small" (click)="registration()"> Go To Registration Page </button></span>
+  </form>
+
+</div>

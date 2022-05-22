@@ -1,0 +1,27 @@
+{
+  "Users": [
+    {
+      "name": "Rahul Kumar",
+      "email": "rc1754255@gmail.com",
+      "role": "Employee",
+      "id": 1
+    },
+    {
+      "name": "Rahul Kumar1",
+      "email": "Rahul_Kumar7@comcast.com",
+      "role": "Applicant",
+      "id": 2
+    }
+  ],
+  "Challenges": [
+    {
+      "id": 1,
+      "title": "Basic Coding Challenge",
+      "description": "There are 2 basic JS questions.",
+      "createdBy": "Rahul Kumar",
+      "creationDate": "2022-05-22T11:49:29.422Z",
+      "vote": 5,
+      "feature": "Coding"
+    }
+  ]
+}

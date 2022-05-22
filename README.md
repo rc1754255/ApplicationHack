@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve or npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Steps to Run the application.
+1. run npm start from command Prompt inside your application folder.
+2. run below commands to install and run json-server locally.
+        npm install -g json-server
+        json-server --watch db.json   [from inside your application folder to enable db.json file.]
+3. Play with the application.
+4. Success Flow.
+    a. First you need to register as Employee to create challenge
+    b. you can register as Applicant as well to vote an existing Challenge.
+    c. Then logged In into the syetem.
+    d. Create Challenge or vote Challenge according to your role.
+    

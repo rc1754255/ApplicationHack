@@ -1,0 +1,23 @@
+<div class="card-container">
+    <form class="form" #createChallengeForm="ngForm" style="width: 50%;">
+        <div class="form-group mb-3">
+            <label for="feature">Select feature *</label>
+            <select class="form-control"  id="feature" [(ngModel)]="formData.feature" name="feature" style="appearance: auto;" required>
+                <option *ngFor="let feature1 of features" [value]="feature1">{{feature1}}</option>
+            </select>
+        </div>
+        <div class="form-group mb-3">
+            <label for="title">Title *</label>
+            <input type="title" class="form-control" id="title" [(ngModel)]="formData.title" name="title"
+                placeholder="Enter title" style="width:100%" #title="ngModel" required/>
+        </div>
+        <div class="form-group mb-3">
+            <label for="description">Description *</label>
+            <input type="description" class="form-control" id="description" [(ngModel)]="formData.description" name="description"
+                placeholder="Enter description" style="width:100%" #description="ngModel" required/>
+        </div>
+        <button id="saveBtn" class="btn btn-primary vms-btn-primary btn-small mb-3" (click)="save()" [disabled]="createChallengeForm.invalid"> Create </button>
+
+    </form>
+
+</div>
